@@ -19,6 +19,17 @@
 ---
 include:
   - board: nice_nano_v2
-    shield: swweeep_left
+    shield: swweeep_left nice_view_adapter nice_view
   - board: nice_nano_v2
-    shield: swweeep_right
+    shield: swweeep_right nice_view_adapter nice_view
+    
+  - board: nice_nano_v2
+    shield: swweeep_left nice_view_adapter nice_view
+    snippet: studio-rpc-usb-uart
+    cmake-args: -DCONFIG_ZMK_STUDIO=y
+    artifact-name: swweeep_left_studio
+  - board: nice_nano_v2
+    shield: swweeep_right nice_view_adapter nice_view
+    snippet: studio-rpc-usb-uart
+    cmake-args: -DCONFIG_ZMK_STUDIO=y
+    artifact-name: swweeep_right_studio    
